@@ -1,0 +1,30 @@
+:host {
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            color: rgb(95, 228, 95);
+        }
+
+        section {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+    }
+}
