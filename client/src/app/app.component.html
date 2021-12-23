@@ -1,1 +1,15 @@
-<p>app-component works!</p>
+<div>
+  <h1>Welcome to this flawless web3 demo with 2 buttons!</h1>
+  
+  <h3 *ngIf="myWeb3">1. Web3 initialized!</h3>
+  <h3 *ngIf="contract">2. Contract connection initialized!</h3>
+
+  <h3 style="color: black">Call a method:</h3>
+  <section *ngIf="contract?.methods">
+    <button (click)="retrieve()">Retrieve</button>
+    <button (click)="store()">Store</button>
+  </section>
+
+  <h1 *ngIf="retrieveResult">Retrieved a value of: {{ retrieveResult }}</h1>
+  <h1 *ngIf="storeResult" style="color: green">Success!</h1>
+</div>
